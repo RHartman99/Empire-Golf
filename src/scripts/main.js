@@ -1,18 +1,17 @@
 // Smooth scrolling
 const hashes = document.querySelectorAll('a[href^="#"]');
 
-const overviewH = document.querySelector("#overview").getBoundingClientRect()
-  .top;
-const timelineH = document.querySelector("#timeline").getBoundingClientRect()
-  .top;
-const outcomesH = document.querySelector("#outcomes").getBoundingClientRect()
-  .top;
-const budgetH = document.querySelector("#budget").getBoundingClientRect().top;
+const overviewH = document.querySelector("#overview").offsetTop;
+const timelineH = document.querySelector("#timeline").offsetTop;
+const outcomesH = document.querySelector("#outcomes").offsetTop;
+const budgetH = document.querySelector("#budget").offsetTop;
 
 const overview = document.querySelector("#menu-1");
 const timeline = document.querySelector("#menu-2");
 const outcomes = document.querySelector("#menu-3");
-const budget = document.querySelector("#budget");
+const budget = document.querySelector("#menu-4");
+
+console.log(`${overviewH}`);
 
 for (const item of hashes) {
   item.addEventListener("click", e => {
@@ -35,8 +34,8 @@ for (const item of hashes) {
   });
 }
 
-window.onscroll = function() {
-  var height = window.pageYOffset - window.innerHeight;
+window.onscroll = () => {
+  var height = window.pageYOffset + 80;
   if (height >= budgetH) {
     budget.classList.add("active");
     outcomes.classList.remove("active");
@@ -63,4 +62,11 @@ window.onscroll = function() {
     timeline.classList.remove("active");
     overview.classList.remove("active");
   }
+};
+
+document.onload = () => {
+  budget.classList.remove("active");
+  outcomes.classList.remove("active");
+  timeline.classList.remove("active");
+  overview.classList.remove("active");
 };
