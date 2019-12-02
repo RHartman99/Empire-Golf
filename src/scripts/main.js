@@ -7,12 +7,12 @@ const timelineH = document.querySelector("#timeline").getBoundingClientRect()
   .top;
 const outcomesH = document.querySelector("#outcomes").getBoundingClientRect()
   .top;
-// const budgetH = document.querySelector("#budget").getBoundingClientRect().top;
+const budgetH = document.querySelector("#budget").getBoundingClientRect().top;
 
 const overview = document.querySelector("#menu-1");
 const timeline = document.querySelector("#menu-2");
 const outcomes = document.querySelector("#menu-3");
-// const budget = document.querySelector("#budget");
+const budget = document.querySelector("#budget");
 
 for (const item of hashes) {
   item.addEventListener("click", e => {
@@ -37,30 +37,28 @@ for (const item of hashes) {
 
 window.onscroll = function() {
   var height = window.pageYOffset - window.innerHeight;
-  console.log("in here");
-  // if (height >= budgetH) {
-  //   budget.classList.add("active");
-  //   outcomes.classList.remove("active");
-  //   timelines.classList.remove("active");
-  //   overview.classList.remove("active");
-  // } else
-  if (height >= outcomesH) {
-    // budget.classList.remove("active");
+  if (height >= budgetH) {
+    budget.classList.add("active");
+    outcomes.classList.remove("active");
+    timelines.classList.remove("active");
+    overview.classList.remove("active");
+  } else if (height >= outcomesH) {
+    budget.classList.remove("active");
     outcomes.classList.add("active");
     timeline.classList.remove("active");
     overview.classList.remove("active");
   } else if (height >= timelineH) {
-    // budget.classList.remove("active");
+    budget.classList.remove("active");
     outcomes.classList.remove("active");
     timeline.classList.add("active");
     overview.classList.remove("active");
   } else if (height >= overviewH) {
-    // budget.classList.remove("active");
+    budget.classList.remove("active");
     outcomes.classList.remove("active");
     timeline.classList.remove("active");
     overview.classList.add("active");
   } else {
-    // budget.classList.remove("active");
+    budget.classList.remove("active");
     outcomes.classList.remove("active");
     timeline.classList.remove("active");
     overview.classList.remove("active");
