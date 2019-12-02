@@ -428,15 +428,15 @@ a {
 }
 
 .timeline__graph--month-point.end {
-  right: -13px;
+  right: 2rem;
 }
 
 .timeline__graph--month-point.end .timeline__graph--month-point-subtitle {
-  left: -325%;
+  left: -275%;
 }
 
 .timeline__graph--month-point.end .timeline__graph--month-point-date {
-  left: -325%;
+  left: -275%;
 }
 
 .timeline__graph--month-point.jan {
