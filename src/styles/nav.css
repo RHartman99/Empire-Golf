@@ -9,7 +9,7 @@
   z-index: 50;
   top: 0;
   width: 100vw;
-  height: 100px;
+  height: 70px;
   box-shadow: 0 0 10px #111111;
   background-color: #ffffff;
 }
@@ -27,8 +27,7 @@
 }
 
 .nav__logo img {
-  width: 200px;
-  margin-right: 2rem;
+  width: 150px;
   margin-left: 2rem;
 }
 

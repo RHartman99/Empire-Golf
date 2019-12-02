@@ -540,9 +540,48 @@ a {
 
 /* 
  * =======================================
- *                  Footer
+ *                  Outcomes
  * =======================================
  */
+
+.outcomes {
+  display: flex;
+  flex-direction: column;
+  font-family: "Monsterrat", sans-serif;
+  background-color: #f6f6f6;
+  margin-top: 5rem;
+}
+
+.outcomes__grid {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Monsterrat", sans-serif;
+  margin: 0 6rem;
+  justify-content: center;
+}
+
+.outcomes__grid--single {
+  display: flex;
+  width: 33.33%;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.outcomes__grid--single img {
+  max-width: 50px;
+  margin-right: 2rem;
+}
+
+.outcomes__grid--single h4 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.outcomes__grid--single p {
+  font-size: 1.2rem;
+}
 
 /* 
  * =======================================
