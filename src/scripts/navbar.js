@@ -9,12 +9,14 @@ window.onload = () => {
     e.preventDefault();
     panel.classList.remove("opened");
     accordionButton.classList.remove("active");
+    deadzone.classList.remove("active");
   });
 
   deadzone.addEventListener("touchstart", e => {
     e.preventDefault();
     panel.classList.remove("opened");
     accordionButton.classList.remove("active");
+    deadzone.classList.remove("active");
   });
 
   accordionButton.addEventListener("click", function(e) {
