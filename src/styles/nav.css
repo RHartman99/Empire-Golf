@@ -1,5 +1,7 @@
 #deadzone {
   display: none;
+  height: 0;
+  width: 0;
 }
 
 #deadzone.active {
