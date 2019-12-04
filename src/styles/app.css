@@ -330,7 +330,7 @@ a {
 
 /* 
  * =======================================
- *                  Tutors
+ *                  Timeline
  * =======================================
  */
 
@@ -496,7 +496,7 @@ a {
 }
 
 .timeline__detailed {
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   margin: 0 6rem;
   display: flex;
@@ -545,6 +545,21 @@ a {
   padding: 0.5rem 1rem;
 }
 
+@media (max-width: 1024px) {
+  .timeline__graph {
+    display: none;
+  }
+
+  .timeline__detailed {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .timeline__detailed--single {
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+}
+
 /* 
  * =======================================
  *                  Outcomes
@@ -574,6 +589,7 @@ a {
   font-family: "Monsterrat", sans-serif;
   margin: 0 6rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .outcomes__grid--single {
@@ -597,6 +613,21 @@ a {
 
 .outcomes__grid--single p {
   font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .outcomes__grid {
+    margin: 0;
+  }
+  .outcomes__grid--single {
+    width: 50%;
+  }
+}
+
+@media (max-width: 620px) {
+  .outcomes__grid--single {
+    width: 100%;
+  }
 }
 
 /* 
