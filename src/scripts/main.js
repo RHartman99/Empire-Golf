@@ -34,37 +34,37 @@ for (const item of hashes) {
   });
 }
 
-window.onscroll = () => {
-  if (window.innerWidth > 1024) {
-    var height = window.pageYOffset + 80;
-    if (height >= budgetH) {
-      budget.classList.add("active");
-      outcomes.classList.remove("active");
-      timelines.classList.remove("active");
-      overview.classList.remove("active");
-    } else if (height >= outcomesH) {
-      budget.classList.remove("active");
-      outcomes.classList.add("active");
-      timeline.classList.remove("active");
-      overview.classList.remove("active");
-    } else if (height >= timelineH) {
-      budget.classList.remove("active");
-      outcomes.classList.remove("active");
-      timeline.classList.add("active");
-      overview.classList.remove("active");
-    } else if (height >= overviewH) {
-      budget.classList.remove("active");
-      outcomes.classList.remove("active");
-      timeline.classList.remove("active");
-      overview.classList.add("active");
-    } else {
-      budget.classList.remove("active");
-      outcomes.classList.remove("active");
-      timeline.classList.remove("active");
-      overview.classList.remove("active");
-    }
-  }
-};
+// window.onscroll = () => {
+//   if (window.innerWidth > 1024) {
+//     var height = window.pageYOffset + 80;
+//     if (height >= budgetH) {
+//       budget.classList.add("active");
+//       outcomes.classList.remove("active");
+//       timelines.classList.remove("active");
+//       overview.classList.remove("active");
+//     } else if (height >= outcomesH) {
+//       budget.classList.remove("active");
+//       outcomes.classList.add("active");
+//       timeline.classList.remove("active");
+//       overview.classList.remove("active");
+//     } else if (height >= timelineH) {
+//       budget.classList.remove("active");
+//       outcomes.classList.remove("active");
+//       timeline.classList.add("active");
+//       overview.classList.remove("active");
+//     } else if (height >= overviewH) {
+//       budget.classList.remove("active");
+//       outcomes.classList.remove("active");
+//       timeline.classList.remove("active");
+//       overview.classList.add("active");
+//     } else {
+//       budget.classList.remove("active");
+//       outcomes.classList.remove("active");
+//       timeline.classList.remove("active");
+//       overview.classList.remove("active");
+//     }
+//   }
+// };
 
 document.onload = () => {
   budget.classList.remove("active");
