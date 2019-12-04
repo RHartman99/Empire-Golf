@@ -555,7 +555,9 @@ a {
   .timeline__graph {
     display: none;
   }
+}
 
+@media (max-width: 1024px) {
   .timeline__detailed {
     flex-wrap: wrap;
     margin: 0;
