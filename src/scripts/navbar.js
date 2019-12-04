@@ -25,15 +25,4 @@ window.onload = () => {
       accordionButton.classList.add("active");
     }
   });
-
-  document.querySelectorAll(".mobile-menu__menu-item").forEach(el => {
-    el.addEventListener("click", () => {
-      panel.classList.remove("opened");
-      accordionButton.classList.remove("active");
-    });
-    el.addEventListener("touchstart", () => {
-      panel.classList.remove("opened");
-      accordionButton.classList.remove("active");
-    });
-  });
 };
