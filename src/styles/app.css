@@ -509,6 +509,7 @@ a {
 }
 
 .timeline__detailed--single {
+  margin: 0 4rem;
   display: flex;
   flex-direction: column;
 }
